@@ -1,0 +1,302 @@
+/* ZERA MARGENS E PADDING DEFAULT DO NAVEGADOR, RETIRA BORDAS DE INPUTS E FAZ CÁLCULO DE LARGURA EM BOXES */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* MARGEM DE SEPARAÇÃO PARA ÍCONES DO FONT AWESOME */
+.fa-r1 {margin-right: 4px}
+.fa-r2 {margin-right: 8px}
+.fa-r3 {margin-right: 11px}
+
+/* ALINHAMENTO DE BOXES E TEXTOS */
+.t-center {text-align: center}
+.t-justify {text-align: justify}
+.t-right {text-align: right}
+.t-upper {text-transform: uppercase}
+
+/* TEXTO INVISÍVEL */
+.font-zero {font-size: 0px !important}
+
+/* PRÉ-FORMATAÇÃO DE LINKS */
+a {text-decoration: none;}
+
+/* TRATAMENTO E LARGURA FLUÍDA DE IMAGENS */
+.img {width: 100%; height: auto;}
+img {margin-bottom: -5px;}
+
+/* TRANSIÇÃO SUAVIZADA */
+.transition {-webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}
+
+/* FLUTUACÃO DE ELEMENTOS */
+.float_l {float: left;}
+.float_r {float: right;}
+
+/* ZERA MARGEM A DIREITA */
+.right-none {margin-right: 0% !important;}
+
+/* BORDAS ARREDONDADAS EM ELEMENTOS */
+.radius-p {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.radius-m {-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+.radius-g {-webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px;}
+.round {-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+
+.radius-bottom {
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.radius-top {
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* VÍDEOS DO YOUTUBE E VIMEO RESPONSIVOS PARA DIV CONTROLADORA */
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0; overflow: hidden;}
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/*
+ LINE -> ADICIONA LINHA PARA SEPARAR ELEMENTOS 
+ CLEAR -> LIMPA FLUTUAÇÃO PARA OS PRÓXIMOS ELEMENTOS
+*/
+.line {width: 100%; float: left;}
+.clear {clear: both;}
+
+/* POSIÇÕES DE ELEMENTOS */
+.absolute {position: absolute}
+.relative {position: relative}
+.fixed {position: fixed}
+
+/* PADDINGS PADRÕES */
+.padding-small {padding: 10px 0}
+.padding-low {padding: 20px 0}
+.padding-normal {padding: 30px 0}
+.padding-default {padding: 60px 0}
+.padding-high {padding: 80px 0}
+
+.padding-total-small {padding: 10px}
+.padding-total-low {padding: 20px}
+.padding-total-normal {padding: 35px}
+.padding-total-high {padding: 50px}
+
+/* ****************************
+***** GENERIC WIDTH BOXS ******
+**************************** */
+.box-full {width: 100%; float: left; position: relative}
+.box {display: inline-block; vertical-align: top; margin-left: -4px; padding: 10px;}
+/* OBJETO PRINCIPAL */
+
+.box20 {width: 20%;}
+/* LARGURA DE 25% */
+.box25 {width: 25%;}
+/* LARGURA DE 25% */
+.box30 {width: 30%}
+/* LARGURA DE 30% */
+.box33 {width: 33.3333%}
+/* LARGURA DE 33.333% */
+.box35 {width: 35%}
+/* LARGURA DE 35% */
+.box40 {width: 40%}
+/* LARGURA DE 40% */
+.box50 {width: 50%}
+/* LARGURA DE 50% */
+.box60 {width: 60%}
+/* LARGURA DE 60% */
+.box65 {width: 65%}
+/* LARGURA DE 65% */
+.box70 {width: 70%}
+/* LARGURA DE 70% */
+.box75 {width: 75%}
+/* LARGURA DE 70% */
+.box100 {width: 100%}
+/* LARGURA DE 100% */
+
+/* ****************************
+***** TRIGGER ERRORS BOXS *****
+**************************** */
+.trigger { /* OBJETO PRINCIPAL */
+    display: block;
+    margin-bottom: 13px;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.trigger-box {
+    display: block;
+    margin-bottom: 13px;
+    padding: 25px;
+    border-left: 6px solid transparent;
+}
+.trigger-box .icon {float: left;}
+.trigger-box .icon i {font-size: 45px;}
+.trigger-box header {margin-left: 65px; border-bottom: 0 !important;}
+.trigger-box header h4 {font-size: 20px;}
+.trigger-box header p {font-size: 15px;}
+
+.trigger-box.accept {background-color: #fff; border-left-color: rgba(52, 189, 57, .9);}
+.trigger-box.info {background-color: #fff; border-left-color: rgba(2, 131, 255, .9);}
+.trigger-box.alert {background-color: #fff; border-left-color: rgba(247, 192, 87, .9);}
+.trigger-box.error {background-color: #fff; border-left-color: rgba(239, 55, 53, .9);}
+
+.trigger-close {position: absolute; top: 7px; right: 7px; font-size: 12px; color: rgba(0, 0, 0, 0.4); cursor: pointer}
+.trigger-close:hover {color: rgba(0, 0, 0, 0.6);}
+
+.accept {background-color: rgba(52, 189, 57, .9);}
+.info {background-color: rgba(2, 131, 255, .9);}
+.alert {background-color: rgba(247, 192, 87, .9);}
+.error {background-color: rgba(239, 55, 53, .9);}
+
+/* ****************************
+******** TABLES STYLES ********
+**************************** */
+.content-table {overflow: hidden; overflow-x: auto;}
+.table .tb-field {padding: 15px; font-size: 15px; border-bottom: 1px solid rgba(0, 0, 0, .05);}
+.table .tb-field2 {padding: 20px 15px; font-size: 13px; border-bottom: 1px solid rgba(0, 0, 0, .05)}
+
+/* ****************************
+******** MODAL DEFAULT ********
+**************************** */
+.mask_modal {width: 100%; height: 100%; min-height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.7); z-index: 9; display: none;}
+.content-modal {position: fixed; z-index: 11; display: none; width: 100%; height: 100%; left: 0; top: 0; overflow: hidden; overflow-y: auto}
+.modal {width: 1000px; max-width: 90%; margin: 50px auto; position: relative;}
+.close_modal {position: absolute; cursor: pointer; top: -10px; right: -10px; z-index: 1}
+
+.tiny_imageupload {position: fixed; display: none; z-index: 11; width: 450px; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50%; margin-top: -225px;}
+.tiny_imageupload .close {position: absolute; z-index: 12; width: 35px; height: 35px; padding: 4px; cursor: pointer; text-align: center; right: -10px; top: -10px; font-size: 21px;}
+.tiny_imageupload .btn-medio {width: 100%;}
+.tiny_imageupload .image_up {height: 180px; overflow: hidden; overflow-y: auto;}
+.tiny_imageupload #image_up {display: none;}
+
+/*------Margin left-------*/
+.ml-0 { margin-left: 0px }
+.ml-5 { margin-left: 5px }
+.ml-10 { margin-left: 10px }
+.ml-15 { margin-left: 15px }
+.ml-20 { margin-left: 20px }
+.ml-30 { margin-left: 30px }
+.ml-40 { margin-left: 40px }
+.ml-50 { margin-left: 50px }
+.ml-60 { margin-left: 60px }
+.ml-70 { margin-left: 70px }
+.ml-80 { margin-left: 80px }
+.ml-90 { margin-left: 90px }
+.ml-100 { margin-left: 100px }
+/*------Margin right-------*/
+.mr-0 { margin-right: 0px }
+.mr-5 { margin-right: 5px }
+.mr-10 { margin-right: 10px }
+.mr-15 { margin-right: 15px }
+.mr-20 { margin-right: 20px }
+.mr-30 { margin-right: 30px }
+.mr-40 { margin-right: 40px }
+.mr-50 { margin-right: 50px }
+.mr-60 { margin-right: 60px }
+.mr-70 { margin-right: 70px }
+.mr-80 { margin-right: 80px }
+.mr-90 { margin-right: 90px }
+.mr-100 { margin-right: 100px }
+/*------Margin Top-------*/
+.mt-0 { margin-top: 0px }
+.mt-5 { margin-top: 5px }
+.mt-10 { margin-top: 10px }
+.mt-15 { margin-top: 15px }
+.mt-20 { margin-top: 20px }
+.mt-30 { margin-top: 30px }
+.mt-40 { margin-top: 40px }
+.mt-50 { margin-top: 50px }
+.mt-60 { margin-top: 60px }
+.mt-70 { margin-top: 70px }
+.mt-80 { margin-top: 80px }
+.mt-90 { margin-top: 90px }
+.mt-100 { margin-top: 100px }
+/*------Margin Bottom-------*/
+.mb-0 { margin-bottom: 0px }
+.mb-5 { margin-bottom: 5px }
+.mb-10 { margin-bottom: 10px }
+.mb-15 { margin-bottom: 15px }
+.mb-20 { margin-bottom: 20px }
+.mb-30 { margin-bottom: 30px }
+.mb-40 { margin-bottom: 40px }
+.mb-50 { margin-bottom: 50px }
+.mb-60 { margin-bottom: 60px }
+.mb-70 { margin-bottom: 70px }
+.mb-80 { margin-bottom: 80px }
+.mb-90 { margin-bottom: 90px }
+.mb-100 { margin-bottom: 100px }
+/*------Padding left-------*/
+.pl-0 { padding-left: 0px }
+.pl-5 { padding-left: 5px }
+.pl-10 { padding-left: 10px }
+.pl-15 { padding-left: 15px }
+.pl-20 { padding-left: 20px }
+.pl-30 { padding-left: 30px }
+.pl-40 { padding-left: 40px }
+.pl-50 { padding-left: 50px }
+.pl-60 { padding-left: 60px }
+.pl-70 { padding-left: 70px }
+.pl-80 { padding-left: 80px }
+.pl-90 { padding-left: 90px }
+.pl-100 { padding-left: 100px }
+/*------Padding right-------*/
+.pr-0 { padding-right: 0px }
+.pr-5 { padding-right: 5px }
+.pr-10 { padding-right: 10px }
+.pr-15 { padding-right: 15px }
+.pr-20 { padding-right: 20px }
+.pr-30 { padding-right: 30px }
+.pr-40 { padding-right: 40px }
+.pr-50 { padding-right: 50px }
+.pr-60 { padding-right: 60px }
+.pr-70 { padding-right: 70px }
+.pr-80 { padding-right: 80px }
+.pr-90 { padding-right: 90px }
+.pr-100 { padding-right: 100px }
+/*------Padding Top-------*/
+.pt-0 { padding-top: 0px }
+.pt-5 { padding-top: 5px }
+.pt-10 { padding-top: 10px }
+.pt-15 { padding-top: 15px }
+.pt-20 { padding-top: 20px }
+.pt-30 { padding-top: 30px }
+.pt-40 { padding-top: 40px }
+.pt-50 { padding-top: 50px }
+.pt-60 { padding-top: 60px }
+.pt-70 { padding-top: 70px }
+.pt-80 { padding-top: 80px }
+.pt-90 { padding-top: 90px }
+.pt-100 { padding-top: 100px }
+.pt-110 { padding-top: 110px }
+/*------Padding Bottom-------*/
+.pb-0 { padding-bottom: 0px }
+.pb-5 { padding-bottom: 5px }
+.pb-10 { padding-bottom: 10px }
+.pb-15 { padding-bottom: 15px }
+.pb-20 { padding-bottom: 20px }
+.pb-30 { padding-bottom: 30px }
+.pb-40 { padding-bottom: 40px }
+.pb-50 { padding-bottom: 50px }
+.pb-60 { padding-bottom: 60px }
+.pb-70 { padding-bottom: 70px }
+.pb-80 { padding-bottom: 80px }
+.pb-90 { padding-bottom: 90px }
+.pb-100 { padding-bottom: 100px }
+.pb-110 { padding-bottom: 110px }
+.pb-120 { padding-bottom: 120px }
+.pb-130 { padding-bottom: 130px }
+
+
+
+

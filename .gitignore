@@ -1,0 +1,10 @@
+# PASTAS E ARQUIVOS IGNORADOS DO PROJETO
+/.idea/
+/themes/Dashboard/images/
+/themes/Default/images/
+/themes/Campus/images/
+/cache/
+/upload/
+/vendor/
+composer.lock
+composer.phar

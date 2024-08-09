@@ -1,0 +1,36 @@
+{
+  "name": "bernar_correa/mangaead",
+  "description": "Projeto de EAD da MangaCode utilizando novos padrões de desenvolvimento e layout.",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bernardo Corrêa",
+      "email": "contato@mangacode.com.br",
+      "role": "Developer",
+      "homepage": "https://mangacode.com.br"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.2",
+    "coffeecode/router": "1.0.*",
+    "coffeecode/optimizer": "1.0.*",
+    "coffeecode/paginator" : "1.0.*",
+    "coffeecode/uploader" : "1.0.*",
+    "coffeecode/cropper": "1.2.*",
+    "league/plates": "v4.0.0-alpha",
+    "phpmailer/phpmailer": "6.0.*",
+    "dompdf/dompdf": "0.8.*"
+  }
+}

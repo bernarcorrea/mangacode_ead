@@ -1,0 +1,14 @@
+@media print {
+    .content-certificate-single .certificate {
+        box-shadow: none;
+        background-color: #fafafa;
+    }
+    
+    .print_not {
+        display: none;
+    }
+    
+    .print_yes {
+        display: block !important;
+    }
+}
